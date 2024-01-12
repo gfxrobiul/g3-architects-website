@@ -6,8 +6,17 @@
 * {
     font-family: 'Work Sans', sans-serif;
 }
-.btn-primary{
-    
+
+.btn-primary {
+    color: #ffffff;
+    border-radius: 8px;
+    background: #FF900E;
+    padding:20px 25px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border:0;
+    cursor: pointer;
+
 }
 
 header {
@@ -27,7 +36,7 @@ nav {
     color: #131313;
 }
 
-nav > ul {
+nav>ul {
     display: flex;
 }
 
@@ -44,20 +53,45 @@ nav a {
 }
 
 /* BANNER STYLE */
-.banner-content{
+.banner-content {
     max-width: 800px;
     text-align: center;
-    margin:0 auto;
+    margin: 0 auto;
 }
 
-.banner-title{
+.banner-title {
     color: #131313;
     font-size: 4rem;
     font-weight: 700;
 }
 
-.banner-description{
+.banner-description {
     color: #727272;
+}
 
+.banner img {
+    width: 100%;
+    margin-top: 50px;
+}
 
+/* RESPONSIVE MEDIA QUERY */
+/* Mobile Devices */
+@media screen and (max-width:576px){
+    header{
+        padding:20px;
+    }
+    nav{
+        flex-direction: column;
+    }
+}
+/* Medium Devices */
+@media screen and (min-width:576px) and (max-width:960px){
+
+    header{
+        padding:50px;
+    }
+    nav{
+        flex-direction: column;
+    }
+    
 }
